@@ -8,24 +8,24 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/markdown-pages`,
-        name: `markdown-pages`,
-      },
+        name: 'markdown-pages'
+      }
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-image-attributes`,
+            resolve: 'gatsby-remark-image-attributes',
             options: {
-              styleAttributes: [`position`, `top`, `left`],
-            },
-          },
-        ],
-      },
-    },
-  ],
-}
+              styleAttributes: ['position', 'top', 'left']
+            }
+          }
+        ]
+      }
+    }
+  ]
+};

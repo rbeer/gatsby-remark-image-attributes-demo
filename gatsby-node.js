@@ -1,8 +1,8 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   const markdownTemplate = require.resolve(
-    `./src/templates/markdownTemplate.js`
-  )
+    './src/templates/markdownTemplate.js'
+  );
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -18,11 +18,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
     }
-  `)
+  `);
   // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    reporter.panicOnBuild('Error while running GraphQL query.');
+    return;
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
@@ -30,8 +30,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: markdownTemplate,
       context: {
         // additional data can be passed via context
-        slug: node.frontmatter.slug,
-      },
-    })
-  })
-}
+        slug: node.frontmatter.slug
+      }
+    });
+  });
+};
