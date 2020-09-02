@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "gatsby": "^2.24.50",
-    "gatsby-remark-image-attributes": "^0.2.1-no-mdx-fix",
+    "gatsby-remark-image-attributes": "^0.2.2",
     "gatsby-source-filesystem": "^2.3.27",
     "gatsby-transformer-remark": "^2.8.31",
     "react": "^16.12.0",

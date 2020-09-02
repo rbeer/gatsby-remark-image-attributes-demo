@@ -5566,10 +5566,10 @@ gatsby-recipes@^0.2.20:
     yoga-layout-prebuilt "^1.9.6"
     yup "^0.27.0"
 
-gatsby-remark-image-attributes@^0.2.1-no-mdx-fix:
-  version "0.2.1-no-mdx-fix"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-0.2.1-no-mdx-fix.tgz#dfa511fb77bec30a6d2c0e4fa444fea760e8b9a3"
-  integrity sha512-RbGYt56AjmsxxFC1rYtDQncuGkPssJd6DN4EPU57/ET3SixdBHP1pdMT4k95phYQp04DZ6vnN+VH8x7qQmB1RA==
+gatsby-remark-image-attributes@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-0.2.2.tgz#1d42ceca0923b471c967d9cff3d330aff6f32e1e"
+  integrity sha512-Thh73SLmMbBj2+POeDMqOJlP1nzAWVygcnKb4tFk/0RAzUyLwXG1Y6u/WR+wOMdMUJd5DC4ymNfBH3QL8nTbOA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     lodash.isstring "^4.0.1"
