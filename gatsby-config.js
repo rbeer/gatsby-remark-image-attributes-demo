@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/markdown-pages`,
-        name: 'markdown-pages'
+        path: `${__dirname}/src/pages`,
+        name: 'pages'
       }
     },
     {
@@ -21,9 +21,18 @@ module.exports = {
           {
             resolve: 'gatsby-remark-image-attributes',
             options: {
-              styleAttributes: ['position', 'top', 'left']
+              styleAttributes: [
+                'position',
+                'top',
+                'right',
+                'box-shadow',
+                'vertical-align',
+                'filter'
+              ],
+              dataAttributes: true
             }
-          }
+          },
+          'gatsby-remark-prismjs'
         ]
       }
     }
