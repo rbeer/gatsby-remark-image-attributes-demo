@@ -1,12 +1,19 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import '../page.css';
+
 const Template = ({ data }) => {
   const {
     markdownRemark: { html }
   } = data;
 
-  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <div
+      className="page-container"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  );
 };
 
 export const pageQuery = graphql`

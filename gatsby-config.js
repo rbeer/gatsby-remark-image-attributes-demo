@@ -14,10 +14,20 @@ module.exports = {
         name: 'pages'
       }
     },
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+              linkImagesToOriginal: false,
+              disableBgImage: true,
+              backgroundColor: 'none'
+            }
+          },
           {
             resolve: 'gatsby-remark-image-attributes',
             options: {
@@ -32,6 +42,7 @@ module.exports = {
               dataAttributes: true
             }
           },
+          'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs'
         ]
       }
