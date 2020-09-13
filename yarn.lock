@@ -6469,10 +6469,10 @@ gatsby-remark-autolink-headers@^2.3.12:
     mdast-util-to-string "^1.1.0"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-image-attributes@^0.2.5:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-0.2.5.tgz#0bc5a8b75d1019fe4a59a3e8c150de74e469a1ce"
-  integrity sha512-udOpIB7mFSJSO5QOR7De0aMaXP+XU4fGY1p7Ba/mene8RgRJHUD30cMwxDITPUxX4mPtAyd6G88TaKtXyH0EDQ==
+gatsby-remark-image-attributes@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-0.2.6.tgz#60a394684af0c3815cdb073c8c0ff9aec46b7410"
+  integrity sha512-+/iLB860/pKUdqGOadBX3fr3VRuZtaAKEqeZbeTU5JN/pvT8EHiVcAXDT98d0mgV0+/tJVTF33y+LqI6oGfi9A==
   dependencies:
     "@babel/runtime" "^7.11.2"
     lodash.isstring "^4.0.1"
