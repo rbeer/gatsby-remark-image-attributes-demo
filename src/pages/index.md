@@ -49,7 +49,7 @@ You can enable [all CSS properties](https://www.w3.org/Style/CSS/all-properties.
 
 Compare the markup and `offsetParent`s of these two images to see the difference:
 
-![svg](./gatsby-logo.svg#width=32px) ![png](./gatsby-logo.png#width=32px)
+![no-remark-images](./gatsby-logo_no-remark-images.png#width=32px) ![with-remark-images](./gatsby-logo.png#width=32px)
 
 ---
 
