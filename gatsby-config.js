@@ -31,14 +31,6 @@ module.exports = {
           {
             resolve: 'gatsby-remark-image-attributes',
             options: {
-              styleAttributes: [
-                'position',
-                'top',
-                'right',
-                'box-shadow',
-                'vertical-align',
-                'filter'
-              ],
               dataAttributes: true
             }
           },
