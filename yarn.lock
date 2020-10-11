@@ -6469,15 +6469,15 @@ gatsby-remark-autolink-headers@^2.3.12:
     mdast-util-to-string "^1.1.0"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-image-attributes@^0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-0.2.6.tgz#60a394684af0c3815cdb073c8c0ff9aec46b7410"
-  integrity sha512-+/iLB860/pKUdqGOadBX3fr3VRuZtaAKEqeZbeTU5JN/pvT8EHiVcAXDT98d0mgV0+/tJVTF33y+LqI6oGfi9A==
+gatsby-remark-image-attributes@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-0.2.8.tgz#7fff01ecf812185a4ddbddff0438325f8e359acb"
+  integrity sha512-XHJm5IFgtXyl25n7qCZwG0uWPL19hIZZ5eGGUtn8/hGB68cMm5/vEvCdLizUYGRbfdz6gXwlkwCCoAlz4qTeVQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     lodash.isstring "^4.0.1"
     lodash.uniq "^4.5.0"
-    remark-image-attributes "^0.2.0"
+    remark-image-attributes "^0.2.1"
     unist-util-visit "^2.0.3"
 
 gatsby-remark-images@^3.3.29:
@@ -11845,10 +11845,10 @@ remark-footnotes@1.0.0:
   resolved "https://registry.yarnpkg.com/remark-footnotes/-/remark-footnotes-1.0.0.tgz#9c7a97f9a89397858a50033373020b1ea2aad011"
   integrity sha512-X9Ncj4cj3/CIvLI2Z9IobHtVi8FVdUrdJkCNaL9kdX8ohfsi18DXHsCVd/A7ssARBdccdDb5ODnt62WuEWaM/g==
 
-remark-image-attributes@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/remark-image-attributes/-/remark-image-attributes-0.2.0.tgz#033cd36951e36472b2f3af1f271a78610f950374"
-  integrity sha512-xz15f4NkfeCkIRHj8VOgMh2PqE2cMINb5p2M0oju139imcRQ01JJHTwbcuDhGhXZZC1vewIoSNGokzkC3HwMLA==
+remark-image-attributes@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/remark-image-attributes/-/remark-image-attributes-0.2.1.tgz#f33941577470a3c368dfbd14cb426d0a8ba0312f"
+  integrity sha512-g8TbKWzy0dBAWXrgPW8SmwbehY+1H8TsTtDB9PJr32hqz6joFCSFMCuTI8QqK9+yErBrQv635ksndeO9OTSIVw==
   dependencies:
     unist-util-select "^3.0.1"
 
