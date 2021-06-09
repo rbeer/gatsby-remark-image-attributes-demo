@@ -6329,10 +6329,10 @@ gatsby-remark-autolink-headers@^4.2.0:
     mdast-util-to-string "^2.0.0"
     unist-util-visit "^2.0.3"
 
-gatsby-remark-image-attributes@^1.0.0-0:
-  version "1.0.0-0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-1.0.0-0.tgz#2cc8acb91a50d0bd562710de31a9c43641a13321"
-  integrity sha512-OocP5KQMPbyR3CYAeP54ajAC7p3H3f6rGHbMvx5ZBnAJVxsAXcFYa1Ypmk8sv1VmsVs4lA2G3jxB28iJRgk3GQ==
+gatsby-remark-image-attributes@1.0.0-4:
+  version "1.0.0-4"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-1.0.0-4.tgz#46c3c9a4db8472f561410ea75b15d0000f6dd84e"
+  integrity sha512-k5xJoqabmsRxiN0yDcl6YSnjykOP6QTS+ZnnEnReutsh6fRl/0uWscjpjKGNrZSJ7kckZ5pooNZoo3bIHqPmrw==
   dependencies:
     unist-util-visit "^2.0.3"
 
