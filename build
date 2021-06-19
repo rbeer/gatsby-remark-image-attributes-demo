@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+
+PLUGIN_REPO="https://github.com/rbeer/gatsby-remark-image-attributes"
+PLUGIN_PATH=../gatsby-remark-image-attributes
+
+COLOR_FG_CYAN="\e[1;49;36m"
+COLOR_FG_RED="\e[1;49;31m"
+COLOR_RESET="\e[0m"
+
+function usage {
+  if [ -n "$1" ]; then
+    echo -e "${COLOR_FG_RED}Invalid option: -$1${COLOR_RESET}\n"
+  fi
+
+  echo "Usage: $0 [-hps]"
+  echo -e "Build plugin, demo site and serve it locally"
+  echo -e "Depends: http-server package, yarn\n"
+
+  echo "Options:"
+  echo "  -h                You're looking at it."
+  echo "  -p                Build plugin"
+  echo "                    For this to work, the plugin must exist"
+  echo "                    at $PLUGIN_PATH"
+  echo "                    This will also link $PLUGIN_PATH "
+  echo "  -s                Serve successful build at localhost:8000"
+
+  exit
+}
+
+function print_info {
+  echo -e "${COLOR_FG_CYAN}$1${COLOR_RESET}"
+}
+function print_error {
+  echo -e "${COLOR_FG_RED}!! $1${COLOR_RESET}"
+}
+
+function bail_on_fail {
+  if [ $1 -ne 0 ]; then
+    print_error "Can't proceed without $2. Please check above output for errors!"
+    exit $1
+  fi
+}
+
+while getopts ":hps" opt; do
+  case $opt in
+    h)
+      usage
+      ;;
+    p)
+      if [ ! -d $PLUGIN_PATH ]; then
+        print_error "Plugin not found at $PLUGIN_PATH"
+        print_info "Please clone $PLUGIN_REPO to $PLUGIN_PATH"
+        bail_on_fail 1 "plugin"
+      fi
+      print_info "Option: -p --- Building plugin"
+      BUILD_PLUGIN=1
+      ;;
+    s)
+      print_info "Option: -s --- Serving on localhost:8000, after successful build"
+      SERVE=1
+      ;;
+    ?)
+      usage $OPTARG
+      ;;
+  esac
+done
+
+if [[ $BUILD_PLUGIN -eq 1 ]]; then
+  print_info "- Building plugin"
+  pushd $PLUGIN_PATH && yarn build
+
+  print_info "- Linking plugin"
+  yarn link
+
+  popd
+
+  yarn link gatsby-remark-image-attributes
+fi
+
+gatsby clean && gatsby build
+BUILD_RESULT=$?
+
+if [[ $BUILD_RESULT -eq 0 && $SERVE -eq 1 ]]; then
+  http-server -p 8000 ./public
+fi
