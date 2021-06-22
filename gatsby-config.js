@@ -25,7 +25,8 @@ module.exports = {
               maxWidth: 800,
               linkImagesToOriginal: false,
               disableBgImage: true,
-              backgroundColor: 'none'
+              backgroundColor: 'none',
+              showCaptions: true
             }
           },
           {
