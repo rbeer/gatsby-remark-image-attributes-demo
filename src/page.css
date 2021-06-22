@@ -5,3 +5,8 @@
   border-radius: 6px;
   margin: 0 auto;
 }
+
+figure.gatsby-resp-image-figure {
+  margin-block: unset;
+  margin-inline: unset;
+}
