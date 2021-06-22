@@ -13,7 +13,7 @@ This demo uses [`gatsby-remark-images`](https://www.gatsbyjs.com/plugins/gatsby-
 ```
 ![no attributes](./gatsby-logo.png 'No attributes, here')
 ```
-. ![no attributes](./gatsby-logo.png 'No attributes, here') ![no attributes](./gatsby-logo.png '#this is just a title, too')
+![no attributes](./gatsby-logo.png 'No attributes, here')
 
 ## CSS Properties
 
