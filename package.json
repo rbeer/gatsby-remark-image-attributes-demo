@@ -17,7 +17,7 @@
     "gatsby": "^3.5.1",
     "gatsby-plugin-sharp": "^3.5.0",
     "gatsby-remark-autolink-headers": "^4.2.0",
-    "gatsby-remark-image-attributes": "1.0.0-4",
+    "gatsby-remark-image-attributes": "^1.0.0",
     "gatsby-remark-images": "^5.2.1",
     "gatsby-remark-prismjs": "^5.2.1",
     "gatsby-source-filesystem": "^3.5.0",
