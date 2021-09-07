@@ -103,6 +103,6 @@ Titles without `key=value;` pairs behave according to the CommonMark standard; e
 To add a `title=""` attribute to the markup, add an image attribute with `key: title`.
 
 ```
-![title from attribute](./gatsby-logo.png '#width=64px;title=This has a title from image attributes')
+![title from attribute](./gatsby-logo.png '#width=64px;some=data;title=This has a title from image attributes')
 ```
-![title from attribute](./gatsby-logo.png '#width=64px;title=This has a title from image attributes')
+![title from attribute](./gatsby-logo.png '#width=64px;some=data;title=This has a title from image attributes')
