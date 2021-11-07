@@ -1,0 +1,137 @@
+yarn run v1.22.10
+$ gatsby build
+warn Plugin gatsby-source-filesystem is not compatible with your gatsby version
+4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-transformer-remark is not compatible with your gatsby version
+ 4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-remark-images is not compatible with your gatsby version
+4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-remark-image-attributes is not compatible with your gatsby
+version 4.1.0 - It requires gatsby@^2.24.50 || ^3.0.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-remark-autolink-headers is not compatible with your gatsby
+version 4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-remark-prismjs is not compatible with your gatsby version
+4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-source-filesystem is not compatible with your gatsby version
+4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-remark-images is not compatible with your gatsby version
+4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-remark-image-attributes is not compatible with your gatsby
+version 4.1.0 - It requires gatsby@^2.24.50 || ^3.0.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-remark-autolink-headers is not compatible with your gatsby
+version 4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-remark-prismjs is not compatible with your gatsby version
+4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gwarn Plugin gatsby-transformer-remark is not compatible with your gatsby version
+ 4.1.0 - It requires gatsby@^3.0.0-next.0
+
+[2K[1A[2K[Gsuccess open and validate gatsby-configs, load plugins - 0.397s
+
+[2K[1A[2K[Gsuccess onPreInit - 0.003s
+
+[2K[1A[2K[Gsuccess delete worker cache from previous builds - 0.003s
+
+[2K[1A[2K[Gsuccess initialize cache - 0.029s
+
+[2K[1A[2K[Gsuccess copy gatsby files - 0.072s
+
+[2K[1A[2K[Gsuccess Compiling Gatsby Functions - 0.154s
+
+[2K[1A[2K[Gsuccess onPreBootstrap - 0.166s
+
+[2K[1A[2K[Gsuccess createSchemaCustomization - 0.040s
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.001s
+
+[2K[1A[2K[Gsuccess source and transform nodes - 0.098s
+
+[2K[1A[2K[Ginfo Writing GraphQL type definitions to
+/home/carebear/code/gatsby/demo/.cache/schema.gql
+
+[2K[1A[2K[Gsuccess building schema - 0.672s
+
+[2K[1A[2K[Gsuccess createPages - 0.071s
+
+[2K[1A[2K[Gsuccess createPagesStatefully - 0.050s
+
+[2K[1A[2K[Ginfo Total nodes: 35, SitePage nodes: 1 (use --verbose for breakdown)
+
+[2K[1A[2K[Gsuccess Checking for changed pages - 0.000s
+
+[2K[1A[2K[Gsuccess Cleaning up stale page-data - 0.001s
+
+[2K[1A[2K[Gsuccess onPreExtractQueries - 0.000s
+
+[2K[1A[2K[Gsuccess extract queries from components - 0.306s
+
+[2K[1A[2K[Gsuccess write out redirect data - 0.001s
+
+[2K[1A[2K[Gsuccess onPostBootstrap - 0.002s
+
+[2K[1A[2K[Ginfo bootstrap finished - 3.581s
+
+[2K[1A[2K[Gsuccess write out requires - 0.008s
+
+[2K[1A[2K[Gsuccess Building production JavaScript and CSS bundles - 0.809s
+
+[2K[1A[2K[Gsuccess Building HTML renderer - 0.385s
+
+[2K[1A[2K[Gsuccess Execute page configs - 0.014s
+
+[2K[1A[2K[Gsuccess Caching Webpack compilations - 0.001s
+
+[2K[1A[2K[Gsuccess run queries in workers - 0.863s - 0/0 0.00/s
+
+[2K[1A[2K[Gsuccess Merge worker state - 0.002s
+
+[2K[1A[2K[Gsuccess Writing page-data.json files to public directory - 0.001s - 0/0 0.00/s
+
+[2K[1A[2K[Ginfo There are no new or changed html files to build.
+
+[2K[1A[2K[Gsuccess onPostBuild - 0.000s
+
+[2K[1A[2K[G
+
+Pages
+
+└ src/templates/markdownTemplate.js
+  └   /
+
+  ╭────────────────────────────────────────────────────────────────╮
+  │                                                                │
+  │   (SSG) Generated at build time                                │
+  │ D (DSG) Deferred static generation - page generated at runtime │
+  │ ∞ (SSR) Server-side renders at runtime (uses getServerData)    │
+  │ λ (Function) Gatsby function                                   │
+  │                                                                │
+  ╰────────────────────────────────────────────────────────────────╯
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[Ginfo Done building in 6.860314219 sec
+
+
+Pages
+
+└ src/templates/markdownTemplate.js
+  └   /
+
+  ╭────────────────────────────────────────────────────────────────╮
+  │                                                                │
+  │   (SSG) Generated at build time                                │
+  │ D (DSG) Deferred static generation - page generated at runtime │
+  │ ∞ (SSR) Server-side renders at runtime (uses getServerData)    │
+  │ λ (Function) Gatsby function                                   │
+  │                                                                │
+  ╰────────────────────────────────────────────────────────────────╯
+
+Done in 7.03s.
