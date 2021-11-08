@@ -28,16 +28,18 @@ To use CSS properties like `box-shadow`, add them to the title!
 
 ### Positioning
 
-
-<div style="border: 1px dashed blue; height: 200px; padding: 14px; position: relative;">
-<span style="color: blue;">body</span>
-  <div style="position: relative; top: 50px; left: 20px; width: 80%; border: 1px solid darkorange; text-align: center;">
-    <div style="text-align: center; padding: 14px 0; color: darkorange;">position: relative</div>
-    <div style="text-align: left; width: 50%; padding-left: 5px; padding-bottom: 5px;">Wrapper, after image having been processed by e.g. gatsby-remark-images</div>
-    <div style="position: absolute; top: 0; right: 0; border: 3px dotted red; width: 33%; background: rgb(233,233,233);"><span style="display: block; color: #f00;">position: absolute</span>&lt;img&gt; with styleAttributes</div>
 `gatsby-remark-image-attributes` wraps the result of other image processing plugins, aiming to reach `body` as the wrapper's [`offsetParent`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent). Your `styleAttributes` will be set on that wrapper, not the `<img>`.
+
+<div style="border: 1px dashed black; height: 250px; padding: 14px; position: relative;">
+<span style="color: black;">&lt;body&gt;</span>
+  <div style="position: relative; top: 33px; left: 20px; width: 60%; height: 150px; padding: 5px; border: 3px solid darkorange;">
+    <div style="padding: 14px 0; color: darkorange;">position: relative</div>
+    other plugin's wrapper
+    <div style="position: absolute; top: 0; right: 0; padding: 5px; border: 3px solid green; width: 50%; background: rgb(233,233,233);"><span style="display: block; color: #f00;">position: absolute</span><div style="border: 2px solid blue; padding: 3px; text-align: center;">&lt;img&gt;</div>image-attributes' wrapper</div>
   </div>
-  <div style="position: absolute; top: 0; right: 0; border: 3px solid green; padding: 5px; background: rgb(233,233,233);"><span style="display: block; color: #0a0; text-align: center;">position: absolute</span>&lt;img&gt; with styleAttributes on a wrapper &lt;span&gt; around everything</div>
+  <div style="position: absolute; top: 0; right: 0; border: 2px solid green; padding: 5px; background: rgb(233,233,233);"><span style="display: block; color: #0a0; text-align: center;">position: absolute</span><div style="border: 2px solid darkorange; padding: 5px; text-align: center">
+    <div style="color: darkorange;">position: relative</div>
+  <div style="border: 2px solid blue; padding: 3px; text-align: center;">&lt;img&gt;</div>other plugin's wrapper</div>image-attributes' wrapper</div>
 </div>
 
 Compare the [`offsetParent`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent)s of these two images to see the difference:
